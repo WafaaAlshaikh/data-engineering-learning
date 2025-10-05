@@ -32,9 +32,9 @@ sample data pipeline:
 
 Source → Transformation → Warehouse → Destination
 
-\## Conflict Line: main branch version
+## Conflict Line: feature branch version
+This is the NEW line of text from the feature branch.
 
-This is the original line of text.
 
 
 
