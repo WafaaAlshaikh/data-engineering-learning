@@ -6,7 +6,7 @@ USE railway_system;
 
 --Stations  table:
 
-CREATE TABLE Stations (
+CREATE TABLE stations (
   station_id INT PRIMARY KEY AUTO_INCREMENT,
   name VARCHAR(100) NOT NULL,
   city VARCHAR(100)
@@ -15,7 +15,7 @@ CREATE TABLE Stations (
 
 --Track table:
 
-CREATE TABLE Tracks (
+CREATE TABLE tracks (
   track_id INT PRIMARY KEY AUTO_INCREMENT,
   from_id INT,
   to_id INT,
@@ -26,7 +26,7 @@ CREATE TABLE Tracks (
 
 --Trains table:
 
-CREATE TABLE Trains (
+CREATE TABLE trains (
   train_id INT PRIMARY KEY AUTO_INCREMENT,
   train_name VARCHAR(100) NOT NULL
 );
@@ -34,7 +34,7 @@ CREATE TABLE Trains (
 
 --Trainschedule table:
 
-CREATE TABLE TrainSchedules (
+CREATE TABLE train_schedules (
   schedule_id INT PRIMARY KEY AUTO_INCREMENT,
   train_id INT,
   station_id INT,
@@ -48,7 +48,7 @@ CREATE TABLE TrainSchedules (
 
 --Booking table:
 
-CREATE TABLE Bookings (
+CREATE TABLE bookings (
   booking_id INT PRIMARY KEY AUTO_INCREMENT,
   train_id INT,
   travel_date DATE,
